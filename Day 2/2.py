@@ -1,6 +1,6 @@
 with open("2.txt", "r") as f:
     i = f.read().splitlines()
-# a
+# Part 1
 horizontal = depth = 0
 for x in i:
     n = int(x.split()[1])
@@ -11,7 +11,8 @@ for x in i:
     elif x.startswith("d"):
         depth += n
 print(horizontal*depth)
-# b
+
+# Part 2
 horizontal = depth = aim = 0
 for x in i:
     n = int(x.split()[1])

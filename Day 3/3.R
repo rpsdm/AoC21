@@ -1,7 +1,7 @@
 setwd("/home/dominik/Coding/AoC21/Day 3")
 i <- scan("3.txt", what="")
 
-# Teil 1
+# Part 1
 gamma <- ""
 for (x in 1:nchar(i[1])) {
   n <- table(substr(i, x, x))
@@ -11,7 +11,7 @@ gamma <- strtoi(gamma, base=2)
 epsilon <- strtoi(strrep("1", nchar(i[1])), base=2) - gamma
 gamma*epsilon
 
-# Teil 2
+# Part 2
 oxigen <- i
 n <- 1
 while (length(oxigen) > 1) {
