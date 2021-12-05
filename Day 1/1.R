@@ -1,4 +1,4 @@
-setwd("/home/dominik/Coding/AoC21/Day 1")
+setwd("~/Coding/AoC21/Day 1")
 i <- scan("1.txt")
 # Part 1
 sum(i[-length(i)] < i[-1])

@@ -1,4 +1,4 @@
-setwd("/home/dominik/Coding/AoC21/Day 3")
+setwd("~/Coding/AoC21/Day 3")
 i <- scan("3.txt", what="")
 
 # Part 1
