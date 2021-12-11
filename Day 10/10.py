@@ -10,7 +10,6 @@ points = []
 
 for line in i:
     parser = []
-    corrupted = False
     for char in line:
         if char in pairs.keys():
             parser.append(char)
@@ -19,9 +18,8 @@ for line in i:
                 parser.pop(-1)
             else:
                 score += scores1[char]
-                corrupted = True
                 break
-    if not corrupted:  # Part 2
+    else:  # Part 2
         pts = 0
         for x in reversed(parser):
             pts *= 5
